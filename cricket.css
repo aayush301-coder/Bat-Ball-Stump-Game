@@ -1,75 +1,94 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
+  width: 95%;
+  max-width: 1100px;
   text-align: center;
   background: rgba(0,0,0,0.35);
-  padding: 30px;
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+  padding: 40px;
+  border-radius: 25px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 40px rgba(0,0,0,0.6);
 }
 
-h1 {
-  margin-bottom: 25px;
-  letter-spacing: 2px;
+h1{
+  font-size: 40px;
+  margin-bottom: 35px;
 }
 
-.buttons {
+.buttons{
   display: flex;
-  gap: 20px;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 40px;
 }
 
-.choice-button {
-  height: 110px;
-  width: 110px;
-  border: none;
-  border-radius: 50%;
-  background: white;
-  cursor: pointer;
-  transition: 0.25s;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+.choice-card{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 
-.choice-button:hover {
-  transform: scale(1.1);
+.choice-button{
+  width:100%;
+  height:260px;
+  border:none;
+  border-radius:20px;
+  overflow:hidden;
+  cursor:pointer;
+  background:#fff;
+  transition:.3s;
+  box-shadow:0 10px 25px rgba(0,0,0,0.5);
 }
 
-.choice-button img {
-  height: 70px;
+.choice-button:hover{
+  transform:scale(1.05);
 }
 
-.result-box {
-  margin-top: 25px;
+.choice-button img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
 
-#result {
-  margin: 10px 0;
-  font-size: 24px;
-  color: #00ffcc;
+.choice-card p{
+  margin-top:12px;
+  font-size:20px;
+  font-weight:bold;
 }
 
-#reset {
-  margin-top: 20px;
-  padding: 10px 25px;
-  border: none;
-  border-radius: 30px;
-  background: #00c9a7;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
+.result-box{
+  margin-top:40px;
+  font-size:20px;
 }
 
-#reset:hover {
-  background: #00a386;
+#result{
+  font-size:28px;
+  color:#00ffd9;
+  margin:15px 0;
+}
+
+#reset{
+  margin-top:25px;
+  padding:14px 40px;
+  border:none;
+  border-radius:40px;
+  background:#00c9a7;
+  font-size:18px;
+  color:white;
+  cursor:pointer;
+  transition:.3s;
+}
+
+#reset:hover{
+  background:#00a386;
 }
