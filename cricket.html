@@ -1,24 +1,55 @@
-<div class="buttons">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bat Ball Stump Game</title>
+  <link rel="stylesheet" href="cricket.css">
+</head>
+<body>
 
-  <div class="choice-card">
-    <button class="choice-button" data-choice="Bat">
-      <img src="images/sachin.jpeg" alt="Bat">
-    </button>
-    <p>Bat</p>
+  <div class="container">
+
+    <h1>Bat Ball Stump Game</h1>
+
+    <!-- BUTTONS -->
+    <div class="buttons">
+
+      <div class="choice-card">
+        <button class="choice-button" data-choice="Bat">
+          <img src="images/sachin.jpeg" alt="Bat">
+        </button>
+        <p>Bat</p>
+      </div>
+
+      <div class="choice-card">
+        <button class="choice-button" data-choice="Ball">
+          <img src="images/bumrah.jpeg" alt="Ball">
+        </button>
+        <p>Ball</p>
+      </div>
+
+      <div class="choice-card">
+        <button class="choice-button" data-choice="Stump">
+          <img src="images/dhoni.jpeg" alt="Stump">
+        </button>
+        <p>Stump</p>
+      </div>
+
+    </div>
+
+    <!-- RESULT AREA -->
+    <div class="result-box">
+      <p id="user-move"></p>
+      <p id="computer-move"></p>
+      <h2 id="result"></h2>
+      <p id="score"></p>
+    </div>
+
+    <!-- RESET -->
+    <button id="reset">Reset Score</button>
+
   </div>
 
-  <div class="choice-card">
-    <button class="choice-button" data-choice="Ball">
-      <img src="images/bumrah.jpeg" alt="Ball">
-    </button>
-    <p>Ball</p>
-  </div>
-
-  <div class="choice-card">
-    <button class="choice-button" data-choice="Stump">
-      <img src="images/dhoni.jpeg" alt="Stump">
-    </button>
-    <p>Stump</p>
-  </div>
-
-</div>
+  <script src="cricket.js"></script>
+</body>
+</html>
